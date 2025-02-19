@@ -45,6 +45,23 @@ body {
   justify-content: space-between;
   padding: 1em;
 }
+.task-color {
+  background-color: rgb(249, 228, 241);
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: rgb(9, 10, 73);
+}
+
+.icon i {
+  margin: 0 13px;
+}
+
+.fa-thumbs-up,
+.fa-trash-can {
+  color: rgb(250, 71, 101);
+}
 
 /* @media screen and (max-width: 48rem) {
 } */
