@@ -14,6 +14,43 @@ body {
   min-height: 100vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  opacity: 0.9;
+  border-radius: 1%;
+}
+
+.input-area {
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: rgb(250, 71, 101);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+#task-input {
+  padding: 3px 10px;
+  font-size: 18px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid rgb(250, 71, 101);
+  outline: none;
+}
+
+#add-button {
+  background-color: pink;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-button:hover {
+  background-color: rgb(250, 71, 101);
 }
 
 .task-area {
@@ -24,6 +61,10 @@ body {
   display: flex;
   border-bottom: 1px solid lightgrey;
   position: relative;
+}
+
+.task-tabs div {
+  cursor: pointer;
 }
 
 #under-line {
@@ -63,5 +104,31 @@ body {
   color: rgb(250, 71, 101);
 }
 
-/* @media screen and (max-width: 48rem) {
-} */
+@media (max-width: 400px) {
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #task-input {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .task-tabs {
+    display: flex;
+    justify-content: center;
+  }
+
+  #add-button {
+    width: 90%;
+    padding: 10px 15px;
+  }
+}
